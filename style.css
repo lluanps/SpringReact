@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: #000;
+    color: #FFF;
+}
+
+header {
+    background: linear-gradient(180deg, #102347 0%, #181818 100%);
+    height: 220px;
+}
+
+.cabecalho-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 28px;
+}
+
+.titulo {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.cabecalho-logo-container img {
+    width: 235px;
+}
+
+#vendas{
+    padding: 40px 20px;
+}
+
+.vendas-container{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.vendas-card {
+    background-color: #283142;
+    border-radius: 10px;
+    padding: 40px 33px;
+}
+
+.vendas-titulo {
+    font-size: 24px;
+    color: #676FFF;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.input {
+    border-radius: 5px;
+    border: 1px solid #384459;
+    height: 46px;
+    width: 100%;
+    padding: 0 20px;
+    color: #9AAABE;
+    font-size: 18px;
+    background-color: #1B2531;
+    margin: 10px 0;
+}
+
+.vendas-table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.vendas-table thead {
+    height: 55px;
+    font-size: 16px;
+    color: #E9E9E9;
+    font-weight: 700;
+}
+
+.vendas-table tbody {
+    font-size: 14px;
+    color: #CFCFCF;
+    font-weight: 400;
+    text-align: center;
+}
+
+.vendas-table tbody td {
+    height: 74px;
+    border-top: 1px solid #5F6E82;
+}
+
+.vendas-table tbody tr:hover > td {
+    background-color: #384459;
+}
+
+.vendas-table tbody tr:nth-child(odd) {
+    background-color: #242C3B;
+}
+
+.vendas-botao-container {
+    display: flex;
+    justify-content: center;
+}
+
+.vendas-botao {
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 107, 114, 0.1);;
+    border: 1px solid #FF6B72;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.responsivo-576 {
+    display: none;;
+}
+.responsivo-992 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .responsivo-576 {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 992px) {
+    .responsivo-992 {
+        display: table-cell;
+    }
+}
